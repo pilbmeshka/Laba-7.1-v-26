@@ -1,0 +1,227 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #fff;
+    line-height: 1.6;
+}
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    background-color: #222;
+    padding: 10px 0;
+}
+
+nav a {
+    color: #14a780;
+    text-decoration: none;
+    padding: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+
+.banner {
+    background: url('badfon-les-el-tuman.jpg') center/cover;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 0 0 5px #000;
+}
+
+.banner h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.banner button {
+    background-color: #00bcd4;
+    color: #ffffff;
+    border: none;
+    border: 2px solid #14a780;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: transparent;
+}
+
+.banner button:hover {
+    background-color: #0288d1;
+}
+
+
+.content {
+    display: flex;
+    padding: 30px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.text {
+    width: 45%;
+}
+
+.text h2 {
+    color: #14a780;
+}
+
+.terminal {
+    background-color: #000;
+    color: #00ff00;
+    padding: 15px;
+    border-radius: 5px;
+    font-family: 'Courier New', monospace;
+    width: 45%;
+    white-space: pre-wrap;
+}
+
+
+.about {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.about-text h2 {
+    color: #14a780;
+}
+
+.about-text p {
+    font-size: 1rem;
+}
+
+.gallery {
+    text-align: center;
+    padding: 30px 10px;
+}
+
+.gallery h2 {
+    color: #14a780;
+    margin-bottom: 20px;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.gallery-item {
+    flex: 1 1 calc(33.333% - 20px); 
+    box-sizing: border-box;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+
+footer {
+    background-color: #222;
+    color: #ccc;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9rem;
+    margin-top: 30px;
+    border-top: 2px solid #00bcd4;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+@media (max-width: 600px) {
+    .banner {
+        height: 200px; 
+    }
+
+    .banner h1 {
+        font-size: 1.5rem;
+    }
+
+    .content {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .text, .terminal {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .gallery-item {
+        flex: 1 1 100%; 
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav a {
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 1024px) {
+    .content {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .text, .terminal {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .gallery-item {
+        flex: 1 1 calc(50% - 10px); 
+    }
+
+    .banner h1 {
+        font-size: 1.8rem;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .content {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .text, .terminal {
+        width: 45%;
+    }
+
+    .gallery-item {
+        flex: 1 1 calc(33.333% - 20px); 
+    }
+
+    .banner h1 {
+        font-size: 2rem;
+    }
+}

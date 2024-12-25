@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kali Linux</title>
+    <link rel="stylesheet" href="laba7.css">
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">ГЛАВНАЯ</a></li>
+                <li><a href="#">О KALI LINUX</a></li>
+                <li><a href="#">ИНСТРУМЕНТЫ</a></li>
+            </ul>
+        </nav>
+        <div class="banner">
+            <h1>Добро пожаловать в мир Kali Linux!</h1>
+            <button>Узнать больше</button>
+        </div>
+    </header>
+
+    <section class="content">
+        <div class="text">
+            <h2>WIFITE</h2>
+            <p>
+                Wifite — это автоматизированный инструмент для беспроводных атак.
+
+                Wifite был разработан для использования с дистрибутивами Linux для пентестинга, такими как Kali Linux , Pentoo , BackBox ; любые дистрибутивы Linux с беспроводными драйверами, пропатченными для инъекций. Скрипт, похоже, также работает с Ubuntu 11/10, Debian 6 и Fedora 16.
+                
+                Wifite должен быть запущен как root . Это требуется для набора программ, которые он использует. Запуск загруженных скриптов как root — плохая идея. Я рекомендую использовать загрузочный Live CD Kali Linux, загрузочный USB-накопитель (для постоянного использования) или виртуальную машину. Обратите внимание, что виртуальные машины не могут напрямую получать доступ к оборудованию, поэтому потребуется беспроводной USB-ключ.
+                
+                Wifite предполагает, что у вас есть беспроводная карта и соответствующие драйверы, пропатченные для инъекций и режима неразборчивого соединения/мониторинга.            </p>
+        </div>
+        <div class="terminal">
+            <pre>
+root@kali:~# wifite --pow 50 --wps
+WiFite v2 (r85)
+automated wireless auditor
+designed for Linux
+[+] targeting WPS-enabled networks
+[+] scanning for wireless devices...
+[+] enabling monitor mode on wlan0... done
+[+] initializing scan (mon0), updates at 5 sec intervals, CTRL+C when ready.
+            </pre>
+        </div>
+    </section>
+
+   
+
+    <section class="gallery">
+        <h2>Галерея Kali Linux</h2>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="banner-2022.1-release.jpg" alt="Kali Image 1">
+            </div>
+            <div class="gallery-item">
+                <img src="banner-2022.1-release.jpg" alt="Kali Image 1">
+            </div>
+            <div class="gallery-item">
+                <img src="banner-2022.1-release.jpg" alt="Kali Image 1">
+            </div>
+            <div class="gallery-item">
+                <img src="banner-2022.1-release.jpg" alt="Kali Image 1">
+            </div>
+            <div class="gallery-item">
+                <img src="banner-2022.1-release.jpg" alt="Kali Image 1">
+            </div>
+            <div class="gallery-item">
+                <img src="banner-2022.1-release.jpg" alt="Kali Image 1">
+            </div>
+            <div class="gallery-item">
+                <img src="banner-2022.1-release.jpg" alt="Kali Image 1">
+            </div>
+            <div class="gallery-item">
+                <img src="banner-2022.1-release.jpg" alt="Kali Image 1">
+            </div>
+            <div class="gallery-item">
+                <img src="banner-2022.1-release.jpg" alt="Kali Image 1">
+            </div>
+    
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Kali Linux | Все права защищены</p>
+    </footer>
+</body>
+</html>
